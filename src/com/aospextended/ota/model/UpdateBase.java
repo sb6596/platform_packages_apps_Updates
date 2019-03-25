@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2017 The LineageOS Project
  * Copyright (C) 2019 The PixelExperience Project
+ * Copyright (c) 2019 AospExtended ROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,6 +17,11 @@
  */
 package com.aospextended.ota.model;
 
+import com.aospextended.ota.model.Addon;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 public class UpdateBase implements UpdateBaseInfo {
 
     private String mName;
@@ -24,6 +30,7 @@ public class UpdateBase implements UpdateBaseInfo {
     private long mTimestamp;
     private String mVersion;
     private long mFileSize;
+    private ArrayList<Addon> mAddons;
     private String mDonateUrl;
     private String mForumUrl;
     private String mWebsiteUrl;
@@ -42,6 +49,7 @@ public class UpdateBase implements UpdateBaseInfo {
         mTimestamp = update.getTimestamp();
         mVersion = update.getVersion();
         mFileSize = update.getFileSize();
+        mAddons = update.getAddons();
     }
 
     @Override
@@ -97,6 +105,11 @@ public class UpdateBase implements UpdateBaseInfo {
     public void setFileSize(long fileSize) {
         mFileSize = fileSize;
     }
+
+    @Override
+    public ArrayList<Addon> getAddons() { return mAddons; }
+
+    public void setAddons(ArrayList<Addon> addons) { mAddons = addons; }
 
     @Override
     public String getDonateUrl() {

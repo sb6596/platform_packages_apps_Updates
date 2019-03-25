@@ -16,6 +16,11 @@
  */
 package com.aospextended.ota.model;
 
+import com.aospextended.ota.model.Addon;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 public interface UpdateBaseInfo {
     String getName();
 
@@ -28,6 +33,8 @@ public interface UpdateBaseInfo {
     String getDownloadUrl();
 
     long getFileSize();
+
+    ArrayList<Addon> getAddons();
 
     String getDonateUrl();
 

@@ -56,6 +56,13 @@ android {
             storePassword keystoreProperties['storePassword']
         }
     }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "Updates.apk"
+        }
+
+    }
 }
 
 dependencies {
@@ -67,4 +74,5 @@ dependencies {
     implementation "com.android.support:design:${supportLibVersion}"
     implementation "com.android.support:preference-v7:${supportLibVersion}"
     implementation "com.android.support:recyclerview-v7:${supportLibVersion}"
+    implementation 'com.google.code.gson:gson:2.8.5'
 }

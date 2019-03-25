@@ -22,8 +22,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.provider.BaseColumns;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import com.aospextended.ota.model.Update;
+import com.aospextended.ota.model.Addon;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -42,6 +45,7 @@ public class UpdatesDbHelper extends SQLiteOpenHelper {
                     UpdateEntry.COLUMN_NAME_TIMESTAMP + " INTEGER," +
                     UpdateEntry.COLUMN_NAME_VERSION + " TEXT," +
                     UpdateEntry.COLUMN_NAME_SIZE + " INTEGER," +
+                    UpdateEntry.COLUMN_NAME_ADDONS + " TEXT, " +
                     UpdateEntry.COLUMN_NAME_DONATE_URL + " TEXT," +
                     UpdateEntry.COLUMN_NAME_FORUM_URL + " TEXT," +
                     UpdateEntry.COLUMN_NAME_WEBSITE_URL + " TEXT," +
@@ -78,6 +82,7 @@ public class UpdatesDbHelper extends SQLiteOpenHelper {
         values.put(UpdateEntry.COLUMN_NAME_TIMESTAMP, update.getTimestamp());
         values.put(UpdateEntry.COLUMN_NAME_VERSION, update.getVersion());
         values.put(UpdateEntry.COLUMN_NAME_SIZE, update.getFileSize());
+        values.put(UpdateEntry.COLUMN_NAME_ADDONS,new Gson().toJson(update.getAddons()));
         values.put(UpdateEntry.COLUMN_NAME_DONATE_URL, update.getDonateUrl());
         values.put(UpdateEntry.COLUMN_NAME_FORUM_URL, update.getForumUrl());
         values.put(UpdateEntry.COLUMN_NAME_WEBSITE_URL, update.getWebsiteUrl());
@@ -118,6 +123,7 @@ public class UpdatesDbHelper extends SQLiteOpenHelper {
                 UpdateEntry.COLUMN_NAME_VERSION,
                 UpdateEntry.COLUMN_NAME_STATUS,
                 UpdateEntry.COLUMN_NAME_SIZE,
+                UpdateEntry.COLUMN_NAME_ADDONS,
                 UpdateEntry.COLUMN_NAME_DONATE_URL,
                 UpdateEntry.COLUMN_NAME_FORUM_URL,
                 UpdateEntry.COLUMN_NAME_WEBSITE_URL,
@@ -145,6 +151,8 @@ public class UpdatesDbHelper extends SQLiteOpenHelper {
                 update.setPersistentStatus(cursor.getInt(index));
                 index = cursor.getColumnIndex(UpdateEntry.COLUMN_NAME_SIZE);
                 update.setFileSize(cursor.getLong(index));
+                index = cursor.getColumnIndex(UpdateEntry.COLUMN_NAME_ADDONS);
+                update.setAddons(new Gson().fromJson(cursor.getString(index), new TypeToken<ArrayList<Addon>>() {}.getType()));
                 index = cursor.getColumnIndex(UpdateEntry.COLUMN_NAME_DONATE_URL);
                 update.setDonateUrl(cursor.getString(index));
                 index = cursor.getColumnIndex(UpdateEntry.COLUMN_NAME_FORUM_URL);
@@ -174,6 +182,7 @@ public class UpdatesDbHelper extends SQLiteOpenHelper {
         static final String COLUMN_NAME_TIMESTAMP = "timestamp";
         static final String COLUMN_NAME_VERSION = "version";
         static final String COLUMN_NAME_SIZE = "size";
+        static final String COLUMN_NAME_ADDONS = "addons";
         static final String COLUMN_NAME_DONATE_URL = "donate_url";
         static final String COLUMN_NAME_FORUM_URL = "forum_url";
         static final String COLUMN_NAME_WEBSITE_URL = "website_url";

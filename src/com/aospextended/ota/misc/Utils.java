@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2017 The LineageOS Project
  * Copyright (C) 2019 The PixelExperience Project
+ * Copyright (C) 2019 AospExtended ROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,12 +31,15 @@ import android.os.storage.StorageManager;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.widget.Toast;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 import com.aospextended.ota.UpdatesDbHelper;
 import com.aospextended.ota.controller.UpdaterService;
 import com.aospextended.ota.model.Update;
+import com.aospextended.ota.model.Addon;
 import com.aospextended.ota.model.UpdateBaseInfo;
 import com.aospextended.ota.model.UpdateInfo;
 
@@ -83,11 +87,23 @@ public class Utils {
     // This should really return an UpdateBaseInfo object, but currently this only
     // used to initialize UpdateInfo objects
     private static UpdateInfo parseJsonUpdate(JSONObject object) throws JSONException {
+
+        ArrayList<Addon> addons;
+        String addonArray;
+
+        try {
+            addonArray = object.getJSONArray("addons").toString();
+            addons = new Gson().fromJson(addonArray, new TypeToken<ArrayList<Addon>>() {}.getType());
+        } catch (Exception e2) {
+            addons = new ArrayList<Addon>();
+        }
+
         Update update = new Update();
         update.setTimestamp(object.getLong("datetime"));
         update.setName(object.getString("filename"));
         update.setDownloadId(object.getString("id"));
         update.setFileSize(object.getLong("size"));
+        update.setAddons(addons);
         update.setDownloadUrl(object.getString("url"));
         update.setVersion(object.getString("version"));
         update.setHash(object.getString("filehash"));

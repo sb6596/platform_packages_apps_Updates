@@ -41,6 +41,12 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".AddonsActivity"
+            android:label="@string/addons_title"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".LocalChangelogActivity"
             android:excludeFromRecents="true"
             android:label="@string/menu_show_changelog"

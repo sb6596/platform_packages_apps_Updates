@@ -9,8 +9,11 @@ import android.preference.PreferenceFragment;
 import android.support.design.widget.Snackbar;
 import android.util.Log;
 import android.widget.ListView;
+import java.util.ArrayList;
+import com.google.gson.Gson;
 
 import com.aospextended.ota.model.UpdateInfo;
+import com.aospextended.ota.model.Addon;
 
 public class ExtrasFragment extends PreferenceFragment implements Preference.OnPreferenceClickListener {
 
@@ -20,17 +23,20 @@ public class ExtrasFragment extends PreferenceFragment implements Preference.OnP
     private static final String WEBSITE_INFO = "website_info";
     private static final String NEWS_INFO = "news_info";
     private static final String DONATE_INFO = "donate_info";
+    private static final String ADDONS = "addons";
     private static String MAINTAINER_URL = "";
     private static String DONATE_URL = "";
     private static String FORUM_URL = "";
     private static String WEBSITE_URL = "";
     private static String NEWS_URL = "";
+    private ArrayList<Addon> addons;
     private PreferenceCategory mExtrasCategory;
     private Preference mMaintainerInfo;
     private Preference mForumInfo;
     private Preference mWebsiteInfo;
     private Preference mNewsInfo;
     private Preference mDonateInfo;
+    private Preference mAddons;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,11 +48,13 @@ public class ExtrasFragment extends PreferenceFragment implements Preference.OnP
         mWebsiteInfo = findPreference(WEBSITE_INFO);
         mNewsInfo = findPreference(NEWS_INFO);
         mDonateInfo = findPreference(DONATE_INFO);
+        mAddons = findPreference(ADDONS);
         mMaintainerInfo.setOnPreferenceClickListener(this);
         mForumInfo.setOnPreferenceClickListener(this);
         mWebsiteInfo.setOnPreferenceClickListener(this);
         mNewsInfo.setOnPreferenceClickListener(this);
         mDonateInfo.setOnPreferenceClickListener(this);
+        mAddons.setOnPreferenceClickListener(this);
         getPreferenceScreen().removeAll();
     }
 
@@ -59,6 +67,15 @@ public class ExtrasFragment extends PreferenceFragment implements Preference.OnP
         }
         getPreferenceScreen().addPreference(mExtrasCategory);
         mExtrasCategory.removeAll();
+
+        addons = update.getAddons();
+        if (addons != null && addons.size() > 0) {
+            mAddons.setTitle(R.string.addons_title);
+            mAddons.setSummary(R.string.addons_summary);
+            mExtrasCategory.addPreference(mAddons);
+            mAddons.setSelectable(true);
+        }
+
         if (update.getMaintainer() != null && !update.getMaintainer().isEmpty()) {
             mMaintainerInfo.setSummary(update.getMaintainer());
             mExtrasCategory.addPreference(mMaintainerInfo);
@@ -155,6 +172,15 @@ public class ExtrasFragment extends PreferenceFragment implements Preference.OnP
                 startActivity(intent);
             } catch (Exception ex) {
                 showSnackbar(R.string.error_open_url, Snackbar.LENGTH_SHORT);
+            }
+            return true;
+        } else if (preference == mAddons) {
+            try {
+                Intent intent = new Intent(getActivity(), AddonsActivity.class);
+                intent.putExtra("addons", new Gson().toJson(addons));
+                startActivity(intent);
+            } catch (Exception ex) {
+
             }
             return true;
         }

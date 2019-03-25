@@ -4,6 +4,13 @@
     <PreferenceCategory
         android:key="extras_category"
         android:title="@string/extras_category_title">
+
+        <Preference
+            android:icon="@drawable/ic_addons"
+            android:key="addons"
+            android:summary="@string/addons_summary"
+            android:title="@string/addons_title" />
+
         <Preference
             android:icon="@drawable/ic_web_icon"
             android:key="website_info"
