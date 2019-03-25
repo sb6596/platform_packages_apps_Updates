@@ -74,8 +74,8 @@
             android:marqueeRepeatLimit="marquee_forever"
             android:singleLine="true"
             android:textColor="?android:textColorSecondary"
-            android:textSize="18sp"
-            tools:text="PixelExperience_device-10.0-20200115-2020-OFFICIAL.zip" />
+            android:textSize="18sp" 
+            tools:text="AospExtended-v8.0-device-20210314-1705"/>
 
         <TextView
             android:id="@+id/build_date"

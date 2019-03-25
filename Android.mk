@@ -11,6 +11,9 @@ LOCAL_USE_AAPT2 := true
 LOCAL_STATIC_JAVA_LIBRARIES := \
     gson
 
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := \
+    gson:libs/gson.jar
+
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     com.google.android.material_material \
     androidx.core_core \
@@ -28,24 +31,7 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_CERTIFICATE := platform
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
-LOCAL_REQUIRED_MODULES := privapp_whitelist_org.pixelexperience.ota.xml
-
 include $(BUILD_PACKAGE)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := privapp_whitelist_org.pixelexperience.ota.xml
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/permissions
-LOCAL_SRC_FILES := $(LOCAL_MODULE)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-
-LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := \
-    gson:libs/gson.jar
-
-include $(BUILD_MULTI_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := UpdatesStudio
