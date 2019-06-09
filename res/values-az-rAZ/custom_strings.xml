@@ -17,33 +17,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App name -->
-    <string name="app_name">Sistem yeniləmələri</string>
     <!-- Notifications -->
     <!-- Menu -->
-    <string name="menu_refresh">Təzələ</string>
-    <string name="changelog_loading">Yüklənir…</string>
     <!-- General -->
-    <string name="update_found_notification">Yeniləmə mövcuddur</string>
     <!-- Actions -->
-    <string name="confirm_delete_dialog_title">Faylı sil</string>
-    <string name="confirm_delete_dialog_message">Seçilmiş yeniləmə faylı silinsin?</string>
     <!-- Installation -->
     <!-- Export update -->
     <!-- ETA -->
     <!-- Mobile data warning -->
-    <string name="update_on_mobile_data_title">Xəbərdarlıq</string>
-    <string name="update_on_mobile_data_message">Yüksək məlumat istifadəsinə səbəb ola biləcək yeniləmə paketini mobil trafik istifadə edərək endirmək üzrəsiniz. Davam etmək istəyirsiniz?</string>
-    <string name="checkbox_mobile_data_warning">Bir də göstərmə</string>
     <!-- Info section -->
-    <string name="extras_category_title">Ekstralar</string>
-    <string name="maintainer_info_title">İstehsalçı</string>
-    <string name="donate_info_title">İanə et</string>
-    <string name="donate_info_summary">İnkişaf Etdirməni Dəstəklə</string>
-    <string name="website_info_title">Vebsayt</string>
-    <string name="website_info_summary">Veb saytımıza baş çəkin</string>
-    <string name="news_info_title">Xəbərlər</string>
-    <string name="news_info_summary">Yeniləmələr və digər xəbərlər haqqında məlumat alın</string>
-    <string name="forum_info_title">Forum</string>
-    <string name="forum_info_summary">Forum mesajlarına bax</string>
-    <string name="error_open_url">URL-ni veb səyyahda açmaq olmadı</string>
 </resources>

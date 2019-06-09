@@ -17,26 +17,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App name -->
-    <string name="app_name">Systemopdateringer</string>
     <!-- Notifications -->
     <!-- Menu -->
     <!-- General -->
-    <string name="update_found_notification">Ny opdatering tilgængelig</string>
     <!-- Actions -->
     <!-- Installation -->
     <!-- Export update -->
     <!-- ETA -->
     <!-- Mobile data warning -->
     <!-- Info section -->
-    <string name="extras_category_title">Mere</string>
-    <string name="maintainer_info_title">Vedligeholder</string>
-    <string name="donate_info_title">Donér</string>
-    <string name="donate_info_summary">Støt udviklingen</string>
-    <string name="website_info_title">Hjemmeside</string>
-    <string name="website_info_summary">Besøg vores hjemmeside</string>
-    <string name="news_info_title">Nyheder</string>
-    <string name="news_info_summary">Bliv informeret om opdateringer og andre nyheder</string>
-    <string name="forum_info_title">Forum</string>
-    <string name="forum_info_summary">Se forumindlæg</string>
-    <string name="error_open_url">Kunne ikke åbne URL i browser</string>
 </resources>

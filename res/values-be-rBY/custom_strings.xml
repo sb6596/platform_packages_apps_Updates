@@ -17,33 +17,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App name -->
-    <string name="app_name">Абнаўленні сiстэмы</string>
     <!-- Notifications -->
     <!-- Menu -->
-    <string name="menu_refresh">Аднавіць</string>
-    <string name="changelog_loading">Загрузка…</string>
     <!-- General -->
-    <string name="update_found_notification">Даступна новае абнаўленне</string>
     <!-- Actions -->
-    <string name="confirm_delete_dialog_title">Выдаліць файл</string>
-    <string name="confirm_delete_dialog_message">Ці выдаліць абраны файл абнаўлення?</string>
     <!-- Installation -->
     <!-- Export update -->
     <!-- ETA -->
     <!-- Mobile data warning -->
-    <string name="update_on_mobile_data_title">Папярэджанне</string>
-    <string name="update_on_mobile_data_message">Вы збіраецеся спампаваць пакет абнаўлення, выкарыстоўваючы мабільную перадачу дадзеных, за якую, верагодна, спаганяецца дадатковая плата. Вы хочаце працягнуць?</string>
-    <string name="checkbox_mobile_data_warning">Больш не паказваць</string>
     <!-- Info section -->
-    <string name="extras_category_title">Дапаўненні</string>
-    <string name="maintainer_info_title">Суправаджальнік</string>
-    <string name="donate_info_title">Ахвяраваць</string>
-    <string name="donate_info_summary">Падтрымаць распрацоўку</string>
-    <string name="website_info_title">Вэб-сайт</string>
-    <string name="website_info_summary">Наведайце наш сайт</string>
-    <string name="news_info_title">Навіны</string>
-    <string name="news_info_summary">Сачыце за абнаўленнямі і іншымі навінамі</string>
-    <string name="forum_info_title">Форум</string>
-    <string name="forum_info_summary">Паглядзець паведамленні на форуме</string>
-    <string name="error_open_url">Не атрымалася адкрыць спасылку</string>
 </resources>

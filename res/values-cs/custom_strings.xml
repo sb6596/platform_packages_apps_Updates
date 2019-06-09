@@ -27,19 +27,19 @@
     <string name="verifying_download_notification">Ověření aktualizace</string>
     <string name="downloading_notification">Stahování</string>
     <string name="download_paused_notification">Stahování pozastaveno</string>
-    <string name="download_paused_error_notification">Chyba při stahování</string>
-    <string name="download_completed_notification">Stahování bylo dokončeno</string>
+    <string name="download_paused_error_notification">Chyba stahování</string>
+    <string name="download_completed_notification">Stahování dokončeno</string>
     <string name="download_starting_notification">Zahajování stahování</string>
     <string name="update_failed_notification">Aktualizace selhala</string>
     <!-- Menu -->
     <string name="menu_refresh">Obnovit</string>
     <string name="menu_preferences">Předvolby</string>
     <string name="menu_auto_updates_check">Automatická kontrola aktualizací</string>
-    <string name="menu_auto_updates_check_interval_daily">Jednou denně</string>
+    <string name="menu_auto_updates_check_interval_daily">Jadnou denně</string>
     <string name="menu_auto_updates_check_interval_weekly">Jednou týdně</string>
     <string name="menu_auto_updates_check_interval_monthly">Jednou měsíčně</string>
     <string name="menu_auto_updates_check_interval_never">Nikdy</string>
-    <string name="menu_delete_update">Odstranit</string>
+    <string name="menu_delete_update">Smazat</string>
     <string name="menu_copy_url">Kopírovat URL</string>
     <string name="menu_export_update">Export aktualizace</string>
     <string name="menu_show_changelog">Seznam změn</string>
@@ -47,25 +47,25 @@
     <string name="label_download_url">URL stažení</string>
     <string name="toast_download_url_copied">URL zkopírována</string>
     <!-- General -->
-    <string name="update_found_notification">Nové aktualizace k dispozici</string>
-    <string name="snack_no_updates_found">Nové aktualizace nenalezeny</string>
+    <string name="update_found_notification">Nová aktualizace k dispozici</string>
+    <string name="snack_no_updates_found">Nenalezeny žádné nové aktualizace</string>
     <string name="snack_updates_check_failed">Kontrola aktualizací selhala. Zkontrolujte připojení k internetu a zkuste to znovu.</string>
-    <string name="snack_download_failed">Stahování selhalo. Zkontrolujte připojení k internetu a zkuste to znovu.</string>
-    <string name="snack_download_verification_failed">Ověření aktualizace se nezdařilo.</string>
-    <string name="snack_download_verified">Stahování bylo dokončeno.</string>
+    <string name="snack_download_failed">Stahování selhalo. Prosím zkontrolujte připojení k internetu a pokus opakujte.</string>
+    <string name="snack_download_verification_failed">Ověření aktualizace selhalo.</string>
+    <string name="snack_download_verified">Stahování dokončeno.</string>
     <string name="snack_update_not_installable">Tuto aktualizaci nelze nainstalovat přes aktuální sestavení.</string>
     <string name="text_download_speed">%1$s, %2$s/s</string>
     <string name="list_download_progress_new"><xliff:g example="12.2" id="filesize_without_unit">%1$s</xliff:g> z <xliff:g example="310 MB" id="filesize_without_unit">%2$s</xliff:g> • <xliff:g example="56" id="percentage">%3$s</xliff:g></string>
-    <string name="list_download_progress_eta_new"><xliff:g example="12.2" id="filesize_without_unit">%1$s</xliff:g> z <xliff:g example="310 MB" id="filesize_without_unit">%2$s</xliff:g> (<xliff:g example="3 minutes left" id="eta">%3$s</xliff:g>) • <xliff:g example="56" id="percentage">%4$s</xliff:g></string>
+    <string name="list_download_progress_eta_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> z <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> (<xliff:g id="eta" example="3 minutes left">%3$s</xliff:g>) • <xliff:g id="percentage" example="56">%4$s</xliff:g></string>
     <string name="list_verifying_update">Ověření aktualizace</string>
-    <string name="list_no_updates">Nebyly nalezeny žádné nové aktualizace. Chcete-li ručně vyhledat nové aktualizace, použijte tlačítko „Obnovit“.</string>
+    <string name="list_no_updates">Nebyly nalezeny žádné nové aktualizace. Chcete-li ručně vyhledat nové aktualizace, použijte tlačítko Obnovit.</string>
     <string name="blocked_update_dialog_title">Aktualizace zablokována</string>
     <!-- Actions -->
     <string name="action_download">Stáhnout</string>
     <string name="action_pause">Pozastavit</string>
     <string name="action_resume">Pokračovat</string>
     <string name="action_install">Instalovat</string>
-    <string name="action_delete">Odstranit</string>
+    <string name="action_delete">Smazat</string>
     <string name="action_cancel">Zrušit</string>
     <string name="confirm_delete_dialog_title">Smazat soubor</string>
     <string name="confirm_delete_dialog_message">Smazat zvolený soubor aktualizace?</string>
@@ -80,7 +80,7 @@
     <string name="cancel_installation_dialog_message">Zrušit instalaci?</string>
     <string name="installing_update">Instalace balíčku aktualizace</string>
     <string name="installing_update_error">Chyba instalace</string>
-    <string name="installing_update_finished">Aktualizace byla nainstalována</string>
+    <string name="installing_update_finished">Aktualizace nainstalována</string>
     <string name="finalizing_package">Dokončování instalace balíčku</string>
     <string name="preparing_ota_first_boot">Příprava na první spuštění</string>
     <string name="dialog_prepare_zip_message">Příprava předběžné aktualizace</string>
@@ -118,7 +118,7 @@
     <!-- Info section -->
     <string name="extras_category_title">Doplňky</string>
     <string name="maintainer_info_title">Správce</string>
-    <string name="donate_info_title">Přispět</string>
+    <string name="donate_info_title">Darovat</string>
     <string name="donate_info_summary">Podpořte vývoj</string>
     <string name="website_info_title">Webová stránka</string>
     <string name="website_info_summary">Navštivte naše webové stránky</string>
@@ -127,4 +127,7 @@
     <string name="forum_info_title">Fórum</string>
     <string name="forum_info_summary">Zobrazit příspěvky ve fóru</string>
     <string name="error_open_url">Nepodařilo se otevřít adresu URL v prohlížeči</string>
+    <string name="addons_title">Doplňky</string>
+    <string name="addons_summary">Užitečné soubory</string>
+    <string name="addons_error">Nepovedlo se načíst seznam doplňků</string>
 </resources>

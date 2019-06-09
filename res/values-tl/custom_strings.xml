@@ -17,26 +17,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App name -->
-    <string name="app_name">Mga update para sa system</string>
     <!-- Notifications -->
     <!-- Menu -->
     <!-- General -->
-    <string name="update_found_notification">Mayroong bagong update</string>
     <!-- Actions -->
-    <string name="confirm_delete_dialog_title">Burahin ang file</string>
     <!-- Installation -->
     <!-- Export update -->
     <!-- ETA -->
     <!-- Mobile data warning -->
-    <string name="update_on_mobile_data_title">Babala</string>
-    <string name="update_on_mobile_data_message">Ikaw ay magda-download ng update package gamit ang mobile data na maaaring magdulot ng mataas na paggamit ng data. Gusto mo bang magpatuloy?</string>
-    <string name="checkbox_mobile_data_warning">Huwag ulit ipakita</string>
     <!-- Info section -->
-    <string name="extras_category_title">Mga extra</string>
-    <string name="maintainer_info_title">Taga-maintain</string>
-    <string name="donate_info_title">Mag-donate</string>
-    <string name="donate_info_summary">Suportahan ang pag-develop</string>
-    <string name="website_info_title">Website</string>
-    <string name="website_info_summary">Bisitahin ang website</string>
-    <string name="news_info_title">Mga balita</string>
 </resources>
