@@ -17,13 +17,111 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App name -->
+    <string name="app_name">Ενημερώσεις Συστήματος</string>
     <!-- Notifications -->
+    <string name="export_channel_title">Ολοκλήρωση εξαγωγής</string>
+    <string name="new_updates_channel_title">Νέες ενημερώσεις</string>
+    <string name="ongoing_channel_title">Λήψεις σε εξέλιξη</string>
+    <string name="update_failed_channel_title">Η ενημέρωση απέτυχε</string>
+    <string name="verification_failed_notification">Αποτυχία επαλήθευσης</string>
+    <string name="verifying_download_notification">Επαλήθευση ενημέρωσης</string>
+    <string name="downloading_notification">Γίνεται λήψη</string>
+    <string name="download_paused_notification">Λήψη σε παύση</string>
+    <string name="download_paused_error_notification">Σφάλμα λήψης</string>
+    <string name="download_completed_notification">Η λήψη ολοκληρώθηκε</string>
+    <string name="download_starting_notification">Έναρξη λήψης</string>
+    <string name="update_failed_notification">Η ενημέρωση απέτυχε</string>
     <!-- Menu -->
+    <string name="menu_refresh">Ανανέωση</string>
+    <string name="menu_preferences">Προτιμήσεις</string>
+    <string name="menu_auto_updates_check">Αυτόματος έλεγχος ενημερώσεων</string>
+    <string name="menu_auto_updates_check_interval_daily">Μία φορά την ημέρα</string>
+    <string name="menu_auto_updates_check_interval_weekly">Μία φορά την εβδομάδα</string>
+    <string name="menu_auto_updates_check_interval_monthly">Μία φορά το μήνα</string>
+    <string name="menu_auto_updates_check_interval_never">Ποτέ</string>
+    <string name="menu_delete_update">Διαγραφή</string>
+    <string name="menu_copy_url">Αντιγραφή συνδέσμου</string>
+    <string name="menu_export_update">Εξαγωγή ενημέρωσης</string>
+    <string name="menu_show_changelog">Αρχείο αλλαγών</string>
+    <string name="changelog_loading">Φόρτωση…</string>
+    <string name="label_download_url">Λήψη συνδέσμου</string>
+    <string name="toast_download_url_copied">Ο σύνδεσμος αντιγράφηκε</string>
     <!-- General -->
+    <string name="update_found_notification">Υπάρχει διαθέσιμη νέα ενημέρωση</string>
+    <string name="snack_no_updates_found">Βρέθηκαν νέες ενημερώσεις</string>
+    <string name="snack_updates_check_failed">Ο έλεγχος για ενημερώσεις απέτυχε. Παρακαλώ ελέγξτε την σύνδεσή σας στο διαδίκτυο και προσπαθήστε αργότερα.</string>
+    <string name="snack_download_failed">Η λήψη απέτυχε. Παρακαλούμε ελέγξτε την σύνδεση σας στο διαδίκτυο και προσπαθήστε αργότερα.</string>
+    <string name="snack_download_verification_failed">Αποτυχία επαλήθευσης ενημέρωσης.</string>
+    <string name="snack_download_verified">Η λήψη ολοκληρώθηκε.</string>
+    <string name="snack_update_not_installable">Αυτή η ενημέρωση δεν μπορεί να εγκατασταθεί πάνω από την τρέχουσα έκδοση.</string>
+    <string name="text_download_speed">%1$s, %2$s/δ</string>
+    <string name="list_download_progress_new"><xliff:g example="12.2" id="filesize_without_unit">%1$s</xliff:g> of <xliff:g example="310 MB" id="filesize_without_unit">%2$s</xliff:g> • <xliff:g example="56" id="percentage">%3$s</xliff:g></string>
+    <string name="list_download_progress_eta_new"><xliff:g example="12.2" id="filesize_without_unit">%1$s</xliff:g> of <xliff:g example="310 MB" id="filesize_without_unit">%2$s</xliff:g> (<xliff:g example="3 minutes left" id="eta">%3$s</xliff:g>) • <xliff:g example="56" id="percentage">%4$s</xliff:g></string>
+    <string name="list_verifying_update">Επαλήθευση ενημέρωσης</string>
+    <string name="list_no_updates">Δεν βρέθηκαν νέες ενημερώσεις. Για να ελέγξετε χειροκίνητα για νέες ενημερώσεις, χρησιμοποιήστε το πλήκτρο Ανανέωση.</string>
+    <string name="blocked_update_dialog_title">Η ενημέρωση μπλοκαρίστηκε</string>
     <!-- Actions -->
+    <string name="action_download">Λήψη</string>
+    <string name="action_pause">Παύση</string>
+    <string name="action_resume">Συνέχιση</string>
+    <string name="action_install">Εγκατάσταση</string>
+    <string name="action_delete">Διαγραφή</string>
+    <string name="action_cancel">Ακύρωση</string>
+    <string name="confirm_delete_dialog_title">Διαγραφή αρχείου</string>
+    <string name="confirm_delete_dialog_message">Διαγραφή του επιλεγμένου αρχείου ενημέρωσης;</string>
+    <string name="pause_button">Παύση</string>
+    <string name="resume_button">Συνέχιση</string>
+    <string name="reboot">Επανεκκίνηση</string>
+    <string name="details_button">Προβολή λεπτομερειών</string>
     <!-- Installation -->
+    <string name="apply_update_dialog_title">Εφαρμογή ενημέρωσης</string>
+    <string name="apply_update_dialog_message">Πρόκειται να αναβαθμίσετε σε <xliff:g id="update_name">%1$s</xliff:g>.\n\nΑν πατήσετε <xliff:g id="ok">%2$s</xliff:g>, η συσκευή θα επανεκκινήσει σε λειτουργία Recovery για να εγκαταστήσει την ενημέρωση.\n\nΣημείωση: Αυτή η λειτουργία απαιτεί συμβατό Recovery ή οι ενημερώσεις θα πρέπει να εγκατασταθούν χειροκίνητα.</string>
+    <string name="apply_update_dialog_message_ab">Πρόκειται να αναβαθμίσετε σε <xliff:g id="update_name">%1$s</xliff:g>.\n\nΑν πατήσετε <xliff:g id="ok">%2$s</xliff:g>, η συσκευή θα ξεκινήσει την εγκατάσταση στο παρασκήνιο.\n\nΌταν ολοκληρωθεί, θα σας ζητηθεί να κάνετε επανεκκίνηση.</string>
+    <string name="cancel_installation_dialog_message">Ακύρωση της εγκατάστασης;</string>
+    <string name="installing_update">Εγκατάσταση πακέτου ενημέρωσης</string>
+    <string name="installing_update_error">Σφάλμα εγκατάστασης</string>
+    <string name="installing_update_finished">Η ενημέρωση εγκαταστάθηκε</string>
+    <string name="finalizing_package">Ολοκλήρωση εγκατάστασης πακέτου</string>
+    <string name="preparing_ota_first_boot">Προετοιμασία για την πρώτη εκκίνηση</string>
+    <string name="dialog_prepare_zip_message">Προκαταρκτική προετοιμασία ενημέρωσης</string>
+    <string name="dialog_battery_low_title">Χαμηλή μπαταρία</string>
+    <string name="dialog_battery_low_message_pct">Το επίπεδο μπαταρίας είναι πολύ χαμηλό, χρειάζεστε τουλάχιστον <xliff:g id="percent_discharging">%1$d</xliff:g>%% της μπαταρίας για να συνεχίσετε, <xliff:g id="percent_charging">%2$d</xliff:g>%% αν φορτίζεται.</string>
     <!-- Export update -->
+    <string name="dialog_export_title">Εξαγωγή ενημέρωσης</string>
+    <string name="notification_export_success">Η ενημέρωση εξήχθη</string>
+    <string name="notification_export_fail">Σφάλμα εξαγωγής</string>
+    <string name="toast_already_exporting">Εξάγεται ήδη μία ενημέρωση</string>
     <!-- ETA -->
+    <plurals name="eta_seconds">
+        <item quantity="one">1 δευτ. απομένει</item>
+        <item quantity="other">απομένουν <xliff:g id="count">%d</xliff:g> δευτ</item>
+    </plurals>
+    <plurals name="eta_minutes">
+        <item quantity="one">1 λεπτό απομένει</item>
+        <item quantity="other">απομένουν <xliff:g id="count">%d</xliff:g> λεπτά</item>
+    </plurals>
+    <plurals name="eta_hours">
+        <item quantity="one">1 ώρα απομένει</item>
+        <item quantity="other">απομένουν <xliff:g id="count">%d</xliff:g> ώρες</item>
+    </plurals>
     <!-- Mobile data warning -->
+    <string name="update_on_mobile_data_title">Προσοχή</string>
+    <string name="update_on_mobile_data_message">Πρόκειται να κατεβάσετε ένα πακέτο ενημέρωσης χρησιμοποιώντας δεδομένα κινητής το οποίο πιθανόν να προκαλέσει υψηλή χρήση δεδομένων. Θέλετε να συνεχίσετε;</string>
+    <string name="checkbox_mobile_data_warning">Χωρίς επανεμφάνιση</string>
+    <string name="menu_mobile_data_warning">Προειδοποίηση δεδομένων κινητής</string>
     <!-- Info section -->
+    <string name="extras_category_title">Πρόσθετα</string>
+    <string name="maintainer_info_title">Συντηρητής</string>
+    <string name="donate_info_title">Δωρεά</string>
+    <string name="donate_info_summary">Υποστηρίξτε την ανάπτυξη</string>
+    <string name="website_info_title">Ιστοσελίδα</string>
+    <string name="website_info_summary">Επισκεφθείτε την ιστοσελίδα μας</string>
+    <string name="news_info_title">Νέα</string>
+    <string name="news_info_summary">Μείνετε ενημερωμένοι σχετικά με ενημερώσεις και άλλα νέα</string>
+    <string name="forum_info_title">Κοινότητα</string>
+    <string name="forum_info_summary">Προβολή δημοσιεύσεων κοινότητας</string>
+    <string name="error_open_url">Αποτυχία ανοίγματος συνδέσμου στο πρόγραμμα περιήγησης</string>
+    <string name="addons_title">Πρόσθετα</string>
+    <string name="addons_summary">Χρήσιμα αρχεία</string>
+    <string name="addons_error">Αποτυχία φόρτωσης της λίστας προσθέτων</string>
 </resources>

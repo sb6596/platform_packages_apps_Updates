@@ -19,6 +19,7 @@
     <!-- App name -->
     <!-- Notifications -->
     <!-- Menu -->
+    <string name="menu_auto_updates_check_interval_weekly">27</string>
     <!-- General -->
     <!-- Actions -->
     <!-- Installation -->

@@ -17,13 +17,110 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App name -->
+    <string name="app_name">Sistemos atnaujinimai</string>
     <!-- Notifications -->
+    <string name="export_channel_title">Eksporto užbaigimas</string>
+    <string name="new_updates_channel_title">Nauji atnaujinimai</string>
+    <string name="ongoing_channel_title">Vykdomi atsisiuntimai</string>
+    <string name="update_failed_channel_title">Atnaujinti nepavyko</string>
+    <string name="verification_failed_notification">Patikrinimas nepavyko</string>
+    <string name="verifying_download_notification">Tikrinamas naujinimas</string>
+    <string name="downloading_notification">Atsiunčiama</string>
+    <string name="download_paused_notification">Atsiuntimas pristabdytas</string>
+    <string name="download_paused_error_notification">Atsisiuntimo klaida</string>
+    <string name="download_completed_notification">Atsisiuntimas baigtas</string>
+    <string name="download_starting_notification">Pradedamas atsiuntimas</string>
+    <string name="update_failed_notification">Atnaujinti nepavyko</string>
     <!-- Menu -->
+    <string name="menu_refresh">Atnaujinti</string>
+    <string name="menu_preferences">Nustatymai</string>
+    <string name="menu_auto_updates_check">Automatinis naujinimų tikrinimas</string>
+    <string name="menu_auto_updates_check_interval_daily">Kartą per dieną</string>
+    <string name="menu_auto_updates_check_interval_weekly">Kartą per savaitę</string>
+    <string name="menu_auto_updates_check_interval_monthly">Kartą per mėnesį</string>
+    <string name="menu_auto_updates_check_interval_never">Niekada</string>
+    <string name="menu_delete_update">Ištrinti</string>
+    <string name="menu_copy_url">Kopijuoti URL</string>
+    <string name="menu_export_update">Eksportuoti naujinimą</string>
+    <string name="menu_show_changelog">Pakeitimų sąrašas</string>
+    <string name="changelog_loading">Įkeliama…</string>
+    <string name="label_download_url">Atsisiųsti URL</string>
+    <string name="toast_download_url_copied">URL nukopijuotas</string>
     <!-- General -->
+    <string name="update_found_notification">Galimas naujas naujinimas</string>
+    <string name="snack_no_updates_found">Nerasta jokių naujinių</string>
+    <string name="snack_updates_check_failed">Atnaujinimo patikra nepavyko. Patikrinkite interneto ryšį ir bandykite dar kartą vėliau.</string>
+    <string name="snack_download_failed">Nepavyko atsisiųsti. Patikrinkite interneto ryšį ir bandykite dar kartą vėliau.</string>
+    <string name="snack_download_verification_failed">Atnaujinimo patvirtinimas nepavyko.</string>
+    <string name="snack_download_verified">Atsisiuntimas baigtas.</string>
+    <string name="snack_update_not_installable">Šis atnaujinimas negali būti įdiegtas ant esamos versijos.</string>
+    <string name="text_download_speed">%1$s, %2$s/s</string>
+    <string name="list_download_progress_new"><xliff:g example="12.2" id="filesize_without_unit">%1$s</xliff:g> z <xliff:g example="310 MB" id="filesize_without_unit">%2$s</xliff:g> • <xliff:g example="56" id="percentage">%3$s</xliff:g></string>
+    <string name="list_download_progress_eta_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> iš <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> (<xliff:g id="duration" example="3 minutes">%3$s</xliff:g> liko) • <xliff:g id="percentage" example="56">%4$s</xliff:g></string>
+    <string name="list_verifying_update">Tikrinamas atnaujinimas</string>
+    <string name="list_no_updates">Nerasta jokių naujinių. Jei norite patikrinti naujus naujinimus, naudokite mygtuką Atnaujinti.</string>
+    <string name="blocked_update_dialog_title">Atnaujinimas užblokuotas</string>
     <!-- Actions -->
+    <string name="action_download">Atsisiųsti</string>
+    <string name="action_pause">Pauzė</string>
+    <string name="action_resume">Tęsti</string>
+    <string name="action_install">Įdiegti</string>
+    <string name="action_delete">Ištrinti</string>
+    <string name="action_cancel">Atšaukti</string>
+    <string name="confirm_delete_dialog_title">Ištrinti failą</string>
+    <string name="confirm_delete_dialog_message">Ištrinti pasirinktą atnaujinimo failą?</string>
+    <string name="pause_button">Pauzė</string>
+    <string name="resume_button">Tęsti</string>
+    <string name="reboot">Paleisti iš naujo</string>
+    <string name="details_button">Peržiūrėti informaciją</string>
     <!-- Installation -->
+    <string name="apply_update_dialog_title">Įdiegti atnaujinimą</string>
+    <string name="apply_update_dialog_message">Ruošiatės atnaujinti į <xliff:g id="update_name">%1$s</xliff:g>.\n\nJei spausite <xliff:g id="ok">%2$s</xliff:g>, įrenginys bus paleistas iš naujo ir pats įdiegs atnaujinimą.\n\nPastaba: Ši funkcija reikalauja suderinamos atkūrimo programos, arba atnaujinimą teks diegti rankiniu būdu.</string>
+    <string name="apply_update_dialog_message_ab">Ruošiatės atnaujinti į <xliff:g id="update_name">%1$s</xliff:g>.\n\nJei spausite <xliff:g id="ok">%2$s</xliff:g>, įrenginys bus paleistas iš naujo ir pats įdiegs atnaujinimą.\n\nKai atnaujins, prietaisas persikraus automatiškai.</string>
+    <string name="cancel_installation_dialog_message">Atšaukti diegimą?</string>
+    <string name="installing_update">Diegiamas atnaujinimo paketas</string>
+    <string name="installing_update_error">Įdiegimo klaida</string>
+    <string name="installing_update_finished">Naujinimas įdiegtas</string>
+    <string name="finalizing_package">Baigiamas paketo diegimas</string>
+    <string name="preparing_ota_first_boot">Pasiruošiama pirmam įkrovimui</string>
+    <string name="dialog_prepare_zip_message">Preliminarus atnaujinimo rengimas</string>
+    <string name="dialog_battery_low_title">Žemas baterijos lygis</string>
     <!-- Export update -->
+    <string name="dialog_export_title">Eksportuoti naujinimą</string>
+    <string name="notification_export_success">Atnaujinimas eksportuotas</string>
+    <string name="notification_export_fail">Eksporto klaida</string>
+    <string name="toast_already_exporting">Atnaujinimas jau eksportuojamas</string>
     <!-- ETA -->
+    <plurals name="eta_minutes">
+        <item quantity="one">Liko 1min</item>
+        <item quantity="few">Liko <xliff:g id="count">%d</xliff:g> min</item>
+        <item quantity="many">Liko <xliff:g id="count">%d</xliff:g> min</item>
+        <item quantity="other">Liko <xliff:g id="count">%d</xliff:g> min</item>
+    </plurals>
+    <plurals name="eta_hours">
+        <item quantity="one">Liko 1val</item>
+        <item quantity="few">Liko <xliff:g id="count">%d</xliff:g> val</item>
+        <item quantity="many">Liko <xliff:g id="count">%d</xliff:g> val</item>
+        <item quantity="other">Liko <xliff:g id="count">%d</xliff:g> val</item>
+    </plurals>
     <!-- Mobile data warning -->
+    <string name="update_on_mobile_data_title">Dėmesio</string>
+    <string name="update_on_mobile_data_message">Jūs ruošiatės atsisiųsti naujinimo paketą, mobiliuoju ryšiu, kuris greičiausiai išnaudos didelį kiekį duomenų. Ar norite tęsti?</string>
+    <string name="checkbox_mobile_data_warning">Daugiau nerodyti</string>
+    <string name="menu_mobile_data_warning">Mobiliojo ryšio duomenų įspėjimas</string>
     <!-- Info section -->
+    <string name="extras_category_title">Priedai</string>
+    <string name="maintainer_info_title">Prižiūrėtojas</string>
+    <string name="donate_info_title">Paaukoti</string>
+    <string name="donate_info_summary">Paremkite kūrimą</string>
+    <string name="website_info_title">Tinklapis</string>
+    <string name="website_info_summary">Aplankyti svetainę</string>
+    <string name="news_info_title">Naujienos</string>
+    <string name="news_info_summary">Būkite informuoti apie atnaujinimus ir kitas naujienas</string>
+    <string name="forum_info_title">Diskusijos</string>
+    <string name="forum_info_summary">Peržiūrėti forumo įrašus</string>
+    <string name="error_open_url">Nepavyko atidaryti URL naršyklėje</string>
+    <string name="addons_title">Papildiniai</string>
+    <string name="addons_summary">Naudingi failai</string>
+    <string name="addons_error">Nepavyko įkelti priedų sąrašo</string>
 </resources>

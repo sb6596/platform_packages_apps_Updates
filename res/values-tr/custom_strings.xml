@@ -17,13 +17,111 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App name -->
+    <string name="app_name">Sistem güncellemeleri</string>
     <!-- Notifications -->
+    <string name="export_channel_title">Dışa aktarma tamamlandı</string>
+    <string name="new_updates_channel_title">Yeni güncellemeler</string>
+    <string name="ongoing_channel_title">Devam eden indirmeler</string>
+    <string name="update_failed_channel_title">Güncelleme başarısız oldu</string>
+    <string name="verification_failed_notification">Doğrulama başarısız</string>
+    <string name="verifying_download_notification">Güncelleme doğrulanıyor</string>
+    <string name="downloading_notification">İndiriliyor</string>
+    <string name="download_paused_notification">İndirme duraklatıldı</string>
+    <string name="download_paused_error_notification">İndirme hatası</string>
+    <string name="download_completed_notification">İndirme tamamlandı</string>
+    <string name="download_starting_notification">İndirme başlatılıyor</string>
+    <string name="update_failed_notification">Güncelleme başarısız oldu</string>
     <!-- Menu -->
+    <string name="menu_refresh">Yenile</string>
+    <string name="menu_preferences">Tercihler</string>
+    <string name="menu_auto_updates_check">Otomatik güncelleme kontrolü</string>
+    <string name="menu_auto_updates_check_interval_daily">Günde bir kez</string>
+    <string name="menu_auto_updates_check_interval_weekly">Haftada bir kez</string>
+    <string name="menu_auto_updates_check_interval_monthly">Ayda bir kez</string>
+    <string name="menu_auto_updates_check_interval_never">Asla</string>
+    <string name="menu_delete_update">Sil</string>
+    <string name="menu_copy_url">Bağlantıyı kopyala</string>
+    <string name="menu_export_update">Güncellemeyi dışarı aktar</string>
+    <string name="menu_show_changelog">Değişiklikler</string>
+    <string name="changelog_loading">Yükleniyor…</string>
+    <string name="label_download_url">İndirme bağlantısı</string>
+    <string name="toast_download_url_copied">Bağlantı kopyalandı</string>
     <!-- General -->
+    <string name="update_found_notification">Yeni güncelleme mevcut</string>
+    <string name="snack_no_updates_found">Yeni güncelleme yok</string>
+    <string name="snack_updates_check_failed">Güncelleme kontrolü başarısız oldu. Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin.</string>
+    <string name="snack_download_failed">Güncelleme indirilemedi. Lütfen internet bağlantınızı kontrol edin ve daha sonra tekrar deneyin.</string>
+    <string name="snack_download_verification_failed">Güncelleme doğrulaması başarısız oldu.</string>
+    <string name="snack_download_verified">İndirme tamamlandı.</string>
+    <string name="snack_update_not_installable">Bu güncelleme mevcut yapının üstüne kurulamaz.</string>
+    <string name="text_download_speed">%1$s, %2$s/sn</string>
+    <string name="list_download_progress_new"><xliff:g example="12.2" id="filesize_without_unit">%1$s</xliff:g> of <xliff:g example="310 MB" id="filesize_without_unit">%2$s</xliff:g> • <xliff:g example="56" id="percentage">%3$s</xliff:g></string>
+    <string name="list_download_progress_eta_new"><xliff:g example="12.2" id="filesize_without_unit">%1$s</xliff:g> of <xliff:g example="310 MB" id="filesize_without_unit">%2$s</xliff:g> (<xliff:g example="3 minutes left" id="eta">%3$s</xliff:g>) • <xliff:g example="56" id="percentage">%4$s</xliff:g></string>
+    <string name="list_verifying_update">Güncelleme doğrulanıyor</string>
+    <string name="list_no_updates">Yeni güncelleme bulunamadı. Yeni güncellemeleri manuel olarak kontrol etmek için yenile tuşunu kullanın.</string>
+    <string name="blocked_update_dialog_title">Güncelleme engellendi</string>
     <!-- Actions -->
+    <string name="action_download">İndir</string>
+    <string name="action_pause">Duraklat</string>
+    <string name="action_resume">Devam et</string>
+    <string name="action_install">Yükle</string>
+    <string name="action_delete">Sil</string>
+    <string name="action_cancel">İptal</string>
+    <string name="confirm_delete_dialog_title">Dosyayı sil</string>
+    <string name="confirm_delete_dialog_message">Seçilen güncelleme dosyası silinsin mi?</string>
+    <string name="pause_button">Duraklat</string>
+    <string name="resume_button">Devam et</string>
+    <string name="reboot">Yeniden başlat</string>
+    <string name="details_button">Ayrıntıları görüntüle</string>
     <!-- Installation -->
+    <string name="apply_update_dialog_title">Güncellemeyi uygula</string>
+    <string name="apply_update_dialog_message"><xliff:g id="update_name">%1$s</xliff:g>\n\nyükseltmek üzeresiniz. <xliff:g id="ok">%2$s</xliff:g>, cihaz güncellemeyi yüklemek için kurtarma modunda yeniden başlatılır.\n\nNot: Bu özellik uyumlu bir kurtarma gerektirir veya güncellemelerin manuel olarak yüklenmesi gerekir.</string>
+    <string name="apply_update_dialog_message_ab"><xliff:g id="update_name">%1$s</xliff:g> \n\nyükseltmek üzeresiniz. <xliff:g id="ok">%2$s</xliff:g> tuşuna basarsanız, cihaz arka planda yüklemeye başlayacaktır.\n\nİşlem tamamlandığında, yeniden başlatmanız istenir.</string>
+    <string name="cancel_installation_dialog_message">Yükleme iptal edilsin mi?</string>
+    <string name="installing_update">Güncelleme paketi yükleniyor</string>
+    <string name="installing_update_error">Yükleme hatası</string>
+    <string name="installing_update_finished">Güncelleme yüklendi</string>
+    <string name="finalizing_package">Paket yüklenimi tamamlanıyor</string>
+    <string name="preparing_ota_first_boot">Ön yükleme için hazırlanıyor</string>
+    <string name="dialog_prepare_zip_message">Güncelleme ön hazırlığı</string>
+    <string name="dialog_battery_low_title">Düşük pil</string>
+    <string name="dialog_battery_low_message_pct">Pil seviyesi çok düşük, devam etmek için en az %%<xliff:g id="percent_discharging">%1$d</xliff:g> pil gereklidir, %%<xliff:g id="percent_charging">%2$d</xliff:g> şarj ediliyor.</string>
     <!-- Export update -->
+    <string name="dialog_export_title">Güncelleme dışa aktarılıyor</string>
+    <string name="notification_export_success">Güncelleme dışa aktarıldı</string>
+    <string name="notification_export_fail">Dışa aktarım hatası</string>
+    <string name="toast_already_exporting">Zaten bir güncelleme dışa aktarılıyor</string>
     <!-- ETA -->
+    <plurals name="eta_seconds">
+        <item quantity="one">1 saniye kaldı</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> saniye kaldı</item>
+    </plurals>
+    <plurals name="eta_minutes">
+        <item quantity="one">1 dakika kaldı</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> dakika kaldı</item>
+    </plurals>
+    <plurals name="eta_hours">
+        <item quantity="one">1 saat kaldı</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> saat kaldı</item>
+    </plurals>
     <!-- Mobile data warning -->
+    <string name="update_on_mobile_data_title">Uyarı</string>
+    <string name="update_on_mobile_data_message">Mobil veri kullanarak bir güncelleme indirmek üzeresiniz, muhtemelen yüksek veri kullanımına neden olabilir. Devam etmek ister misiniz?</string>
+    <string name="checkbox_mobile_data_warning">Tekrar gösterme</string>
+    <string name="menu_mobile_data_warning">Mobil veri uyarısı</string>
     <!-- Info section -->
+    <string name="extras_category_title">Ekstralar</string>
+    <string name="maintainer_info_title">Sorumlu</string>
+    <string name="donate_info_title">Bağış yap</string>
+    <string name="donate_info_summary">Geliştiriciyi destekle</string>
+    <string name="website_info_title">İnternet sitesi</string>
+    <string name="website_info_summary">İnternet sitemizi ziyaret edin</string>
+    <string name="news_info_title">Haberler</string>
+    <string name="news_info_summary">Güncellemeler ve diğer haberler hakkında bilgi sahibi olun</string>
+    <string name="forum_info_title">Forum</string>
+    <string name="forum_info_summary">Forum gönderilerini görüntüle</string>
+    <string name="error_open_url">Bağlantı\'yı tarayıcıda açma başarısız oldu</string>
+    <string name="addons_title">Eklentiler</string>
+    <string name="addons_summary">Yararlı dosyalar</string>
+    <string name="addons_error">Eklenti listesi yüklenemedi</string>
 </resources>

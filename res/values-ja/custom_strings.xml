@@ -34,7 +34,7 @@
     <!-- Menu -->
     <string name="menu_refresh">再読込</string>
     <string name="menu_preferences">設定</string>
-    <string name="menu_auto_updates_check">更新の自動確認</string>
+    <string name="menu_auto_updates_check">自動確認</string>
     <string name="menu_auto_updates_check_interval_daily">毎日</string>
     <string name="menu_auto_updates_check_interval_weekly">毎週</string>
     <string name="menu_auto_updates_check_interval_monthly">毎月</string>
@@ -84,7 +84,7 @@
     <string name="finalizing_package">パッケージのインストールを完了中</string>
     <string name="preparing_ota_first_boot">初回起動を準備中</string>
     <string name="dialog_prepare_zip_message">予備の更新準備</string>
-    <string name="dialog_battery_low_title">バッテリー残量低下</string>
+    <string name="dialog_battery_low_title">残量低下</string>
     <string name="dialog_battery_low_message_pct">バッテリー残量が不足しています。続行するには<xliff:g id="percent_discharging">%1$d</xliff:g>%%、充電時は<xliff:g id="percent_charging">%2$d</xliff:g>%%のバッテリー残量が必要です。</string>
     <!-- Export update -->
     <string name="dialog_export_title">更新のエクスポート中</string>
