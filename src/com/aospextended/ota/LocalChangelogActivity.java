@@ -20,8 +20,8 @@ import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.style.ForegroundColorSpan;
@@ -57,7 +57,7 @@ public class LocalChangelogActivity extends AppCompatActivity {
             Pattern p2 = Pattern.compile("\\s+\\*\\s(([\\w_.-]+/)+)");
             Pattern p3 = Pattern.compile("(\\d\\d-\\d\\d-\\d{4})");
             int numRead;
-            char tmp[] = new char[2048];
+            char[] tmp = new char[2048];
             try (InputStreamReader inputReader = new FileReader(CHANGELOG_PATH)) {
 
                 while ((numRead = inputReader.read(tmp)) >= 0) {
