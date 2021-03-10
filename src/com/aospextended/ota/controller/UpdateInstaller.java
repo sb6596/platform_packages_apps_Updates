@@ -71,7 +71,7 @@ class UpdateInstaller {
             // uncrypt rewrites the file so that it can be read without mounting
             // the filesystem, so create a copy of it.
             prepareForUncryptAndInstall(update);
-        } else {
+        } else if (update != null) {
             installPackage(update.getFile());
         }
     }
