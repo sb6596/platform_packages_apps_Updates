@@ -48,7 +48,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/ic_system_update"
-                android:tint="@color/google_blue" />
+                android:tint="@*android:color/accent_device_default_light" />
 
             <TextView
                 android:layout_width="wrap_content"
