@@ -29,13 +29,9 @@ import android.os.SystemProperties;
 import android.os.storage.StorageManager;
 import android.util.Log;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 import com.aospextended.ota.controller.UpdaterService;
-import com.aospextended.ota.model.MaintainerInfo;
 import com.aospextended.ota.model.Update;
 import com.aospextended.ota.model.UpdateBaseInfo;
 import com.aospextended.ota.model.UpdateInfo;
@@ -84,14 +80,6 @@ public class Utils {
     // This should really return an UpdateBaseInfo object, but currently this only
     // used to initialize UpdateInfo objects
     private static UpdateInfo parseJsonUpdate(JSONObject object, Context context) throws JSONException {
-        ArrayList<MaintainerInfo> maintainers;
-        try {
-            maintainers = new Gson().fromJson(object.getJSONArray("maintainers").toString(),
-                    new TypeToken<ArrayList<MaintainerInfo>>() {
-                    }.getType());
-        } catch (Exception e2) {
-            maintainers = new ArrayList<>();
-        }
         Update update = new Update();
         update.setTimestamp(object.getLong("datetime"));
         update.setName(object.getString("filename"));
@@ -100,7 +88,8 @@ public class Utils {
         update.setDownloadUrl(object.getString("url"));
         update.setVersion(object.getString("version"));
         update.setHash(object.getString("filehash"));
-        update.setMaintainers(maintainers);
+        update.setMaintainer(object.isNull("maintainer") ? "" : object.getString("maintainer"));
+        update.setMaintainerUrl(object.isNull("maintainer_url") ? "" : object.getString("maintainer_url"));
         update.setDonateUrl(object.isNull("donate_url") ? "" : object.getString("donate_url"));
         update.setForumUrl(object.isNull("forum_url") ? "" : object.getString("forum_url"));
         update.setWebsiteUrl(object.isNull("website_url") ? "" : object.getString("website_url"));
@@ -153,10 +142,6 @@ public class Utils {
 
     public static String getServerURL() {
         return String.format(Constants.OTA_URL, SystemProperties.get(Constants.PROP_DEVICE), SystemProperties.get(Constants.PROP_VERSION_CODE));
-    }
-
-    public static String getMaintainerURL(String username) {
-        return String.format(Constants.MAINTAINER_URL, username);
     }
 
     public static String getDownloadWebpageUrl(String fileName) {

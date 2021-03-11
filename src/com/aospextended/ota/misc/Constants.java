@@ -31,7 +31,6 @@ public final class Constants {
     static final String PROP_BUILD_VERSION = "ro.modversion";
     static final String PROP_VERSION_CODE = "ro.extended.ota.version_code";
     static final String OTA_URL = "https://api.aospextended.com/ota_v2/%s/%s";
-    static final String MAINTAINER_URL = "https://www.aospextended.com/teams";
     static final String DOWNLOAD_WEBPAGE_URL = "https://downloads.aospextended.com/download/%s/%s/%s";
     static final String EXPORT_PATH = "AospExtended-Updates/";
 }
