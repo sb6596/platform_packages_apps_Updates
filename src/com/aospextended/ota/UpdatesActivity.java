@@ -53,7 +53,6 @@ import com.aospextended.ota.controller.UpdaterController;
 import com.aospextended.ota.controller.UpdaterService;
 import com.aospextended.ota.download.DownloadClient;
 import com.aospextended.ota.misc.Constants;
-import com.aospextended.ota.misc.PermissionsUtils;
 import com.aospextended.ota.misc.Utils;
 import com.aospextended.ota.model.UpdateInfo;
 import com.aospextended.ota.model.UpdateStatus;
@@ -516,11 +515,6 @@ public class UpdatesActivity extends UpdatesListActivity {
     }
 
     private void exportUpdate() {
-        boolean hasPermission = PermissionsUtils.checkAndRequestStoragePermission(
-                this, ExportUpdateService.EXPORT_STATUS_PERMISSION_REQUEST_CODE);
-        if (!hasPermission) {
-            return;
-        }
         File dest = new File(Utils.getExportPath(), mExportUpdateName);
         Intent intent = new Intent(this, ExportUpdateService.class);
         intent.setAction(ExportUpdateService.ACTION_START_EXPORTING);
