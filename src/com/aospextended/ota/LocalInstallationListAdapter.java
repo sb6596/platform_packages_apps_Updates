@@ -51,6 +51,14 @@ public class LocalInstallationListAdapter extends RecyclerView.Adapter<LocalInst
         return fileList.size();
     }
 
+    public void removeItem(int position) {
+        notifyItemRemoved(position);
+    }
+
+    public void cancelSwipe(int position) {
+        notifyItemChanged(position);
+    }
+
     static class ViewHolder extends RecyclerView.ViewHolder {
         private final ExtraCardView fileCard;
 

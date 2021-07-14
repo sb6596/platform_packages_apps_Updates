@@ -118,4 +118,10 @@
     <!-- Local Installation -->
     <string name="menu_local_installation">Local installation</string>
     <string name="no_local_installation">No valid local installation package found.\nPlease copy installation zip to root of device\'s internal storage.</string>
+    <string name="file_deletion_success">File is successfully removed</string>
+    <string name="file_deletion_failed">Failed to remove the file</string>
+    <string name="delete_file_dialog_title">Delete File</string>
+    <string name="delete_file_dialog_desc">Are you sure?</string>
+    <string name="lbl_yes">YES</string>
+    <string name="lbl_no">NO</string>
 </resources>
