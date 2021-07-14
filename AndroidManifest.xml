@@ -43,6 +43,13 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".LocalInstallationActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
         <service android:name=".controller.UpdaterService" />
         <service android:name=".ExportUpdateService" />
 

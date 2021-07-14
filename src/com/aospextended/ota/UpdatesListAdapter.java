@@ -20,10 +20,8 @@ import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.res.Resources;
 import android.net.Uri;
-import android.os.BatteryManager;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -54,10 +52,6 @@ import java.text.NumberFormat;
 public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.ViewHolder> {
 
     private static final String TAG = "UpdateListAdapter";
-
-    private static final int BATTERY_PLUGGED_ANY = BatteryManager.BATTERY_PLUGGED_AC
-            | BatteryManager.BATTERY_PLUGGED_USB
-            | BatteryManager.BATTERY_PLUGGED_WIRELESS;
 
     private String mDownloadId = null;
     private UpdaterController mUpdaterController;
@@ -399,7 +393,7 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
     }
 
     private AlertDialog.Builder getInstallDialog() {
-        if (!isBatteryLevelOk()) {
+        if (!Utils.isBatteryLevelOk(mContext)) {
             Resources resources = mContext.getResources();
             String message = resources.getString(R.string.dialog_battery_low_message_pct,
                     resources.getInteger(R.integer.battery_ok_percentage_discharging),
@@ -423,7 +417,7 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
                 .setMessage(mContext.getString(resId, mUpdate.getName(),
                         mContext.getString(android.R.string.ok)) + extraMessage)
                 .setPositiveButton(android.R.string.ok,
-                        (dialog, which) -> Utils.triggerUpdate(mContext))
+                        (dialog, which) -> Utils.triggerUpdate(mContext, false))
                 .setNegativeButton(android.R.string.cancel, null);
     }
 
@@ -443,21 +437,6 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
                 .setPositiveButton(android.R.string.ok, null)
                 .setMessage(R.string.blocked_update_dialog_summary)
                 .show();
-    }
-
-    private boolean isBatteryLevelOk() {
-        Intent intent = mContext.registerReceiver(null,
-                new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
-        if (!intent.getBooleanExtra(BatteryManager.EXTRA_PRESENT, false)) {
-            return true;
-        }
-        int percent = Math.round(100.f * intent.getIntExtra(BatteryManager.EXTRA_LEVEL, 100) /
-                intent.getIntExtra(BatteryManager.EXTRA_SCALE, 100));
-        int plugged = intent.getIntExtra(BatteryManager.EXTRA_PLUGGED, 0);
-        int required = (plugged & BATTERY_PLUGGED_ANY) != 0 ?
-                mContext.getResources().getInteger(R.integer.battery_ok_percentage_charging) :
-                mContext.getResources().getInteger(R.integer.battery_ok_percentage_discharging);
-        return percent >= required;
     }
 
     private void showSnackbar(String text) {

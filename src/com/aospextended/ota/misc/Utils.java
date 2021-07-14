@@ -20,9 +20,11 @@ import android.annotation.SuppressLint;
 import android.app.AlarmManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.BatteryManager;
 import android.os.Environment;
 import android.os.PowerManager;
 import android.os.SystemProperties;
@@ -31,6 +33,8 @@ import android.util.Log;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import com.aospextended.ota.R;
 import com.aospextended.ota.controller.UpdaterService;
 import com.aospextended.ota.model.Update;
 import com.aospextended.ota.model.UpdateBaseInfo;
@@ -47,7 +51,6 @@ import java.io.InputStream;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
@@ -55,6 +58,10 @@ import java.util.zip.ZipFile;
 public class Utils {
 
     private static final String TAG = "Utils";
+
+    private static final int BATTERY_PLUGGED_ANY = BatteryManager.BATTERY_PLUGGED_AC
+            | BatteryManager.BATTERY_PLUGGED_USB
+            | BatteryManager.BATTERY_PLUGGED_WIRELESS;
 
     private Utils() {
     }
@@ -148,9 +155,9 @@ public class Utils {
         return String.format(Constants.DOWNLOAD_WEBPAGE_URL, SystemProperties.get(Constants.PROP_DEVICE), SystemProperties.get(Constants.PROP_VERSION_CODE), fileName);
     }
 
-    public static void triggerUpdate(Context context) {
+    public static void triggerUpdate(Context context, Boolean isLocal) {
         final Intent intent = new Intent(context, UpdaterService.class);
-        intent.setAction(UpdaterService.ACTION_INSTALL_UPDATE);
+        intent.setAction(isLocal ? UpdaterService.ACTION_INSTALL_LOCAL_UPDATE : UpdaterService.ACTION_INSTALL_UPDATE);
         context.startService(intent);
     }
 
@@ -332,5 +339,20 @@ public class Utils {
     public static void setPersistentStatus(Context context, int status){
         SharedPreferences preferences = androidx.preference.PreferenceManager.getDefaultSharedPreferences(context);
         preferences.edit().putInt(Constants.PREF_CURRENT_PERSISTENT_STATUS, status).commit();
+    }
+
+    public static boolean isBatteryLevelOk(Context mContext) {
+        Intent intent = mContext.registerReceiver(null,
+                new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
+        if (!intent.getBooleanExtra(BatteryManager.EXTRA_PRESENT, false)) {
+            return true;
+        }
+        int percent = Math.round(100.f * intent.getIntExtra(BatteryManager.EXTRA_LEVEL, 100) /
+                intent.getIntExtra(BatteryManager.EXTRA_SCALE, 100));
+        int plugged = intent.getIntExtra(BatteryManager.EXTRA_PLUGGED, 0);
+        int required = (plugged & BATTERY_PLUGGED_ANY) != 0 ?
+                mContext.getResources().getInteger(R.integer.battery_ok_percentage_charging) :
+                mContext.getResources().getInteger(R.integer.battery_ok_percentage_discharging);
+        return percent >= required;
     }
 }

@@ -1,0 +1,18 @@
+<com.aospextended.ota.ExtraCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:extra_card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/file_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/cardview_background"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:contentPaddingBottom="16dp"
+    app:contentPaddingLeft="16dp"
+    app:contentPaddingRight="16dp"
+    app:contentPaddingTop="16dp"
+    extra_card_view:image="@drawable/ic_zip"
+    />

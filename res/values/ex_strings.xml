@@ -114,4 +114,8 @@
     <string name="forum_info_title">Forum</string>
     <string name="forum_info_summary">View forum posts</string>
     <string name="error_open_url">Failed to open URL in browser</string>
+
+    <!-- Local Installation -->
+    <string name="menu_local_installation">Local installation</string>
+    <string name="no_local_installation">No valid local installation package found.\nPlease copy installation zip to root of device\'s internal storage.</string>
 </resources>

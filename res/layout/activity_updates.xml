@@ -64,6 +64,7 @@
             android:layout_gravity="bottom"
             android:background="@color/theme_bottom_appbar"
             android:theme="@style/ToolbarMenuTheme"
+            app:menu="@menu/menu_toolbar"
             app:navigationIcon="@drawable/ic_back" />
 
         <FrameLayout

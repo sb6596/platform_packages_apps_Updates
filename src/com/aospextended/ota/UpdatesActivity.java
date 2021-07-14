@@ -264,7 +264,13 @@ public class UpdatesActivity extends UpdatesListActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        return super.onOptionsItemSelected(item);
+        switch(item.getItemId()) {
+            case R.id.menu_local_installation:
+                startActivity(new Intent(this, LocalInstallationActivity.class));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     @Override

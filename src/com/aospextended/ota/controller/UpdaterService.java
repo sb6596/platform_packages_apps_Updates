@@ -47,6 +47,7 @@ public class UpdaterService extends Service {
     public static final String ACTION_DOWNLOAD_CONTROL = "action_download_control";
     public static final String EXTRA_DOWNLOAD_CONTROL = "extra_download_control";
     public static final String ACTION_INSTALL_UPDATE = "action_install_update";
+    public static final String ACTION_INSTALL_LOCAL_UPDATE = "action_install_local_update";
 
     public static final int DOWNLOAD_RESUME = 0;
     public static final int DOWNLOAD_PAUSE = 1;
@@ -173,6 +174,18 @@ public class UpdaterService extends Service {
             if (Utils.getPersistentStatus(this) != UpdateStatus.Persistent.VERIFIED) {
                 throw new IllegalArgumentException(update.getDownloadId() + " is not verified");
             }
+            if (Utils.isABDevice()) {
+                ABUpdateInstaller installer = ABUpdateInstaller.getInstance(this,
+                        mUpdaterController);
+                installer.install();
+            } else {
+                UpdateInstaller installer = UpdateInstaller.getInstance(this,
+                        mUpdaterController);
+                installer.install();
+            }
+        } else if (ACTION_INSTALL_LOCAL_UPDATE.equals(intent.getAction())) {
+            UpdateInfo update = mUpdaterController.getCurrentUpdate();
+
             if (Utils.isABDevice()) {
                 ABUpdateInstaller installer = ABUpdateInstaller.getInstance(this,
                         mUpdaterController);

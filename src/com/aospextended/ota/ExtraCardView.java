@@ -47,4 +47,12 @@ public class ExtraCardView extends CardView {
     public void setSummary(String summary) {
         summaryView.setText(summary);
     }
+
+    public void setTitle(String title) {
+        titleView.setText(title);
+    }
+
+    public void enableTitleMarquee() {
+        titleView.setSelected(true);
+    }
 }

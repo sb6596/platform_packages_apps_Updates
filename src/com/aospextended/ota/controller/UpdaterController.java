@@ -33,7 +33,6 @@ import com.aospextended.ota.model.UpdateStatus;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Objects;
 
 public class UpdaterController {
 
@@ -68,7 +67,7 @@ public class UpdaterController {
         mContext = context.getApplicationContext();
     }
 
-    static synchronized UpdaterController getInstance(Context context) {
+    public static synchronized UpdaterController getInstance(Context context) {
         if (sUpdaterController == null) {
             sUpdaterController = new UpdaterController(context);
         }
