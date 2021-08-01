@@ -46,7 +46,7 @@
     </style>
 
     <style name="AlertDialogButtonStyle" parent="android:Widget.DeviceDefault.Button.Borderless.Colored">
-        <item name="android:textColor">@*android:color/accent_device_default_dark</item>
+        <item name="android:textColor">@*android:color/accent_device_default_light</item>
         <item name="android:minWidth">64dp</item>
         <item name="android:minHeight">48dip</item>
     </style>
