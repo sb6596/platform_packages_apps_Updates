@@ -31,7 +31,7 @@
     <string name="check_for_update">檢查更新</string>
     <string name="menu_delete_update">刪除</string>
     <string name="menu_export_update">匯出更新</string>
-    <string name="update_found_notification">系統有更新套件可用！</string>
+    <string name="update_found_notification">有可用的系統更新</string>
     <string name="snack_no_updates_found">沒有找到新的更新</string>
     <string name="snack_updates_check_failed">更新檢查失敗。請檢查您的網路連線並稍後重試。</string>
     <string name="snack_download_failed">下載失敗。請檢查您的網路連線並稍後重試。</string>
@@ -43,6 +43,7 @@
     <string name="list_verifying_update">正在驗證更新</string>
     <string name="list_no_updates">沒有新更新。</string>
     <string name="blocked_update_dialog_title">更新已被封鎖</string>
+    <string name="blocked_update_dialog_summary">此更新需要手動重新安裝過程（在安裝更新之前抹除/格式化數據分區）。 請從我們的網站下載更新，重新啟動到恢復模式，然後按照以下步驟進行操作。 </string>
     <string name="action_download">下載</string>
     <string name="action_pause">暫停</string>
     <string name="action_resume">恢復</string>
@@ -66,9 +67,9 @@
     <string name="dialog_prepare_zip_message">正在準備更新</string>
     <string name="dialog_battery_low_title">電量不足</string>
     <string name="dialog_battery_low_message_pct">電池電量過低，您需要至少 <xliff:g id="percent_discharging">%1$d</xliff:g>%% 的電量才能繼續；如果正在充電，則需要 <xliff:g id="percent_charging">%2$d</xliff:g>%% 的電量才能繼續。</string>
-    <string name="dialog_export_title">將更新導出至内部存储</string>
-    <string name="notification_export_success">已將更新導出至内部存储</string>
-    <string name="notification_export_fail">未能將更新匯出到內部儲存</string>
+    <string name="dialog_export_title">將更新導出至内部儲存空間</string>
+    <string name="notification_export_success">已將更新導出至内部儲存空間</string>
+    <string name="notification_export_fail">未能將更新匯出到內部儲存空間</string>
     <string name="toast_already_exporting">已匯出更新</string>
     <plurals name="eta_seconds">
         <item quantity="other">還剩 <xliff:g id="count">%d</xliff:g> 秒鐘</item>
@@ -80,7 +81,7 @@
         <item quantity="other">還剩 <xliff:g id="count">%d</xliff:g> 小時</item>
     </plurals>
     <string name="update_on_mobile_data_title">警告</string>
-    <string name="update_on_mobile_data_message">下載的更新檔案有可能會使用較高的行動數據，您要繼續嗎？</string>
+    <string name="update_on_mobile_data_message">您將要透過行動數據網路下載更新包，這可能會導致較大的數據用量。您確定要繼續嗎？</string>
     <string name="checkbox_mobile_data_warning">不再顯示</string>
     <string name="maintainer_info_title">維護者</string>
     <string name="donate_info_title">捐贈</string>
@@ -90,6 +91,14 @@
     <string name="news_info_title">新聞</string>
     <string name="news_info_summary">隨時瞭解最新資訊</string>
     <string name="forum_info_title">論壇</string>
-    <string name="forum_info_summary">檢視討論區文章</string>
+    <string name="forum_info_summary">查看討論區文章</string>
     <string name="error_open_url">在瀏覽器中打開 URL 失敗</string>
+    <string name="menu_local_installation">本機安裝</string>
+    <string name="no_local_installation">沒有發現有效的本機安裝包\n請複製安裝包到裝置內部儲存空間的根目錄下</string>
+    <string name="file_deletion_success">檔案已成功刪除</string>
+    <string name="file_deletion_failed">刪除檔案失敗</string>
+    <string name="delete_file_dialog_title">刪除檔案</string>
+    <string name="delete_file_dialog_desc">您確定嗎?</string>
+    <string name="lbl_yes">是</string>
+    <string name="lbl_no">否</string>
 </resources>

@@ -43,6 +43,7 @@
     <string name="list_verifying_update">正在验证更新</string>
     <string name="list_no_updates">未发现新的更新</string>
     <string name="blocked_update_dialog_title">更新已被阻止</string>
+    <string name="blocked_update_dialog_summary">此更新需要格式化数据 (在安装更新前擦除/格式化数据分区)。请从我们的网站下载构建，重启到恢复模式，并按照教程来更新</string>
     <string name="action_download">下载</string>
     <string name="action_pause">暂停</string>
     <string name="action_resume">继续</string>
@@ -92,4 +93,12 @@
     <string name="forum_info_title">论坛</string>
     <string name="forum_info_summary">查看论坛帖子</string>
     <string name="error_open_url">打开链接失败</string>
+    <string name="menu_local_installation">本地安装</string>
+    <string name="no_local_installation">未找到有效的本地安装包。\n请将安装包复制到设备的根目录中。</string>
+    <string name="file_deletion_success">删除文件成功</string>
+    <string name="file_deletion_failed">删除文件失败</string>
+    <string name="delete_file_dialog_title">删除文件</string>
+    <string name="delete_file_dialog_desc">确定要这样做吗?</string>
+    <string name="lbl_yes">是</string>
+    <string name="lbl_no">否</string>
 </resources>

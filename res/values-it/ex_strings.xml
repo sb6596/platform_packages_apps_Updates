@@ -96,4 +96,12 @@
     <string name="forum_info_title">Forum</string>
     <string name="forum_info_summary">Visualizza i post del forum</string>
     <string name="error_open_url">Apertura del link non riuscita</string>
+    <string name="menu_local_installation">Installazione locale</string>
+    <string name="no_local_installation">Nessun pacchetto di installazione locale valido trovato.\nCopiare il file zip di installazione nella root della memoria interna del dispositivo.</string>
+    <string name="file_deletion_success">File rimosso con successo</string>
+    <string name="file_deletion_failed">Rimozione del file non riuscita</string>
+    <string name="delete_file_dialog_title">Elimina file</string>
+    <string name="delete_file_dialog_desc">Sei sicuro?</string>
+    <string name="lbl_yes">SÌ</string>
+    <string name="lbl_no">NO</string>
 </resources>

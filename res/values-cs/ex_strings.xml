@@ -32,7 +32,7 @@
     <string name="menu_delete_update">Smazat</string>
     <string name="menu_export_update">Export aktualizace</string>
     <string name="update_found_notification">Je dostupná aktualizace systému</string>
-    <string name="snack_no_updates_found">Nové aktualizace nenalezeny</string>
+    <string name="snack_no_updates_found">Nenalezeny žádné nové aktualizace</string>
     <string name="snack_updates_check_failed">Kontrola aktualizací selhala. Zkontrolujte připojení k internetu a zkuste to znovu.</string>
     <string name="snack_download_failed">Stahování selhalo. Zkontrolujte připojení k internetu a zkuste to znovu.</string>
     <string name="snack_download_verification_failed">Ověření aktualizace selhalo.</string>
@@ -40,7 +40,7 @@
     <string name="snack_update_not_installable">Tuto aktualizaci nelze nainstalovat přes aktuální sestavení.</string>
     <string name="list_download_progress_new"><xliff:g example="12.2" id="filesize_without_unit">%1$s</xliff:g> z <xliff:g example="310 MB" id="filesize_without_unit">%2$s</xliff:g> • <xliff:g example="56" id="percentage">%3$s</xliff:g></string>
     <string name="list_download_progress_eta_new"><xliff:g example="12.2" id="filesize_without_unit">%1$s</xliff:g> z <xliff:g example="310 MB" id="filesize_without_unit">%2$s</xliff:g> (<xliff:g example="3 minutes left" id="eta">%3$s</xliff:g>) • <xliff:g example="56" id="percentage">%4$s</xliff:g></string>
-    <string name="list_verifying_update">Ověření aktualizace</string>
+    <string name="list_verifying_update">Ověřování aktualizace</string>
     <string name="list_no_updates">Nebyla nalezena žádná nová aktualizace.</string>
     <string name="blocked_update_dialog_title">Aktualizace zablokována</string>
     <string name="blocked_update_dialog_summary">Tato aktualizace vyžaduje manuální čistou instalaci (formátování oddílu /data). Stáhněte si prosím aktualizaci z našich webových stránek, restartujte do režimu recovery a postupujte podle instrukcí pro čistou instalaci.</string>
@@ -102,4 +102,12 @@
     <string name="forum_info_title">Fórum</string>
     <string name="forum_info_summary">Zobrazit příspěvky ve fóru</string>
     <string name="error_open_url">Nepodařilo se otevřít adresu URL v prohlížeči</string>
+    <string name="menu_local_installation">Místní instalace</string>
+    <string name="no_local_installation">Nebyl nalezen žádný platný místní instalační balíček.\nProsím zkopírujte instalační zip do vnitřního úložiště.</string>
+    <string name="file_deletion_success">Soubor byl úspěšně odstraněn</string>
+    <string name="file_deletion_failed">Odstranění souboru se nezdařilo</string>
+    <string name="delete_file_dialog_title">Odstranit soubor</string>
+    <string name="delete_file_dialog_desc">Jste si jisti?</string>
+    <string name="lbl_yes">ANO</string>
+    <string name="lbl_no">NE</string>
 </resources>

@@ -93,4 +93,12 @@
     <string name="forum_info_title">Forum</string>
     <string name="forum_info_summary">Lihat kiriman forum</string>
     <string name="error_open_url">Gagal membuka URL di peramban</string>
+    <string name="menu_local_installation">Instalasi lokal</string>
+    <string name="no_local_installation">Tidak ditemukan paket penginstalan lokal yang valid.\nHarap salin zip penginstalan ke root penyimpanan internal perangkat.</string>
+    <string name="file_deletion_success">File berhasil dihapus</string>
+    <string name="file_deletion_failed">Gagal menghapus file</string>
+    <string name="delete_file_dialog_title">Hapus Berkas</string>
+    <string name="delete_file_dialog_desc">Apakah Anda yakin?</string>
+    <string name="lbl_yes">IYA</string>
+    <string name="lbl_no">TIDAK</string>
 </resources>

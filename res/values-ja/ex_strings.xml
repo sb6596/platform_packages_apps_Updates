@@ -43,6 +43,7 @@
     <string name="list_verifying_update">アップデートを検証中</string>
     <string name="list_no_updates">新しいアップデートはありません</string>
     <string name="blocked_update_dialog_title">アップデートをブロックしました</string>
+    <string name="blocked_update_dialog_summary">このアップデートでは、手動クリーンインストールの作業 (アップデートをインストールする前にデータパーティションのワイプ/フォーマット) が必要です。 アップデートを私達のウェブサイトからダウンロードしてリカバリーモードへ再起動し、手順に従って下さい。</string>
     <string name="action_download">ダウンロード</string>
     <string name="action_pause">一時停止</string>
     <string name="action_resume">再開</string>
@@ -92,4 +93,12 @@
     <string name="forum_info_title">フォーラム</string>
     <string name="forum_info_summary">フォーラムの記事を表示する</string>
     <string name="error_open_url">ブラウザで URL を開くのに失敗しました</string>
+    <string name="menu_local_installation">ローカルインストール</string>
+    <string name="no_local_installation">有効なローカルインストールパッケージが見つかりませんでした。\n端末の内部ストレージの1番上の階層にインストール ZIP をコピーして下さい。</string>
+    <string name="file_deletion_success">ファイルの削除に成功しました</string>
+    <string name="file_deletion_failed">ファイルの削除に失敗しました</string>
+    <string name="delete_file_dialog_title">ファイルの削除</string>
+    <string name="delete_file_dialog_desc">よろしいですか?</string>
+    <string name="lbl_yes">はい</string>
+    <string name="lbl_no">いいえ</string>
 </resources>
