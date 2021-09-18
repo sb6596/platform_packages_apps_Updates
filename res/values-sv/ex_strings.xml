@@ -15,6 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Systemuppdatering</string>
     <string name="export_channel_title">Export slutförd</string>
     <string name="new_updates_channel_title">Nya uppdateringar</string>
     <string name="ongoing_channel_title">Pågående nedladdningar</string>
@@ -27,8 +28,10 @@
     <string name="download_completed_notification">Nedladdning slutförd</string>
     <string name="download_starting_notification">Påbörjar nedladdning</string>
     <string name="update_failed_notification">Något gick fel! Uppdateringen Misslyckades</string>
+    <string name="check_for_update">Sök efter uppdatering</string>
     <string name="menu_delete_update">Ta bort</string>
     <string name="menu_export_update">Exportera uppdateringen</string>
+    <string name="update_found_notification">Systemuppdatering tillgänglig</string>
     <string name="snack_no_updates_found">Inga nya uppdateringar hittades</string>
     <string name="snack_updates_check_failed">Sökningen efter uppdateringar misslyckades. Var god kontrollera din internetanslutning och försök igen senare.</string>
     <string name="snack_download_failed">Nedladdningen misslyckades. Kontrollera din internetanslutning och försök igen senare.</string>
@@ -38,6 +41,7 @@
     <string name="list_download_progress_new"><xliff:g example="12.2" id="filesize_without_unit">%1$s</xliff:g> <xliff:g example="310 MB" id="filesize_without_unit">%2$s</xliff:g> • <xliff:g example="56" id="percentage">%3$s</xliff:g></string>
     <string name="list_download_progress_eta_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> av <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> (<xliff:g id="duration" example="3 minutes">%3$s</xliff:g> kvar) • <xliff:g id="percentage" example="56">%4$s</xliff:g></string>
     <string name="list_verifying_update">Verifierar uppdateringen</string>
+    <string name="list_no_updates">Ingen ny uppdatering hittades.</string>
     <string name="blocked_update_dialog_title">Uppdatering blockerad</string>
     <string name="action_download">Ladda ner</string>
     <string name="action_pause">Pausa</string>
@@ -49,6 +53,7 @@
     <string name="pause_button">Pausa</string>
     <string name="resume_button">Fortsätt</string>
     <string name="reboot">Starta om</string>
+    <string name="reboot_needed_dialog_title">Omstart behövs</string>
     <string name="details_button">Visa detaljer</string>
     <string name="apply_update_dialog_title">Installera uppdateringen</string>
     <string name="apply_update_dialog_message">Du är på väg att uppdatera till <xliff:g id="update_name">%1$s</xliff:g>.\n\nOm du trycker på <xliff:g id="ok">%2$s</xliff:g> så kommer enheten att starta om i säkerhetsläget och påbörja uppdateringen.\n\nOBS! Den här funktionen kräver en kompatibel Recovery-programvara annars måste uppdateringen installeras manuellt.</string>
@@ -75,6 +80,14 @@
     <string name="website_info_summary">Besök vår hemsida</string>
     <string name="news_info_title">Nyheter</string>
     <string name="news_info_summary">Håll dig informerad om uppdateringar och andra nyheter</string>
+    <string name="forum_info_title">Forum</string>
     <string name="forum_info_summary">Visa inlägg i forumet</string>
     <string name="error_open_url">Det gick inte att öppna URL i webbläsaren</string>
+    <string name="menu_local_installation">Lokal installation</string>
+    <string name="file_deletion_success">Borttagningen av filen lyckades</string>
+    <string name="file_deletion_failed">Borttagning av filen misslyckades</string>
+    <string name="delete_file_dialog_title">Ta bort fil</string>
+    <string name="delete_file_dialog_desc">Är du säker?</string>
+    <string name="lbl_yes">JA</string>
+    <string name="lbl_no">NEJ</string>
 </resources>

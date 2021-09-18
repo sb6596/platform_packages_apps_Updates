@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Обновление системы</string>
-    <string name="export_channel_title">Экспорт завершен</string>
+    <string name="export_channel_title">Экспорт завершён</string>
     <string name="new_updates_channel_title">Доступны обновления</string>
     <string name="ongoing_channel_title">Текущие загрузки</string>
-    <string name="update_failed_channel_title">Не удалось обновить</string>
+    <string name="update_failed_channel_title">Ошибка обновления</string>
     <string name="verification_failed_notification">Проверка не удалась</string>
     <string name="verifying_download_notification">Проверка обновления</string>
     <string name="downloading_notification">Загрузка</string>
@@ -32,7 +32,7 @@
     <string name="menu_delete_update">Удалить</string>
     <string name="menu_export_update">Экспорт обновления</string>
     <string name="update_found_notification">Доступно обновление системы</string>
-    <string name="snack_no_updates_found">Обновлений не найдено</string>
+    <string name="snack_no_updates_found">Обновления не найдены</string>
     <string name="snack_updates_check_failed">Не удалось выполнить проверку обновлений. Проверьте подключение к Интернету и повторите попытку.</string>
     <string name="snack_download_failed">Загрузка не удалась. Проверьте подключение к Интернету и повторите попытку.</string>
     <string name="snack_download_verification_failed">Ошибка проверки обновления.</string>
@@ -41,7 +41,7 @@
     <string name="list_download_progress_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> из <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> • <xliff:g id="percentage" example="56">%3$s</xliff:g></string>
     <string name="list_download_progress_eta_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> из <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> (<xliff:g id="eta" example="3 minutes left">%3$s</xliff:g>) • <xliff:g id="percentage" example="56">%4$s</xliff:g></string>
     <string name="list_verifying_update">Проверка обновления</string>
-    <string name="list_no_updates">Новых обновлений нет.</string>
+    <string name="list_no_updates">Новые обновления не найдены.</string>
     <string name="blocked_update_dialog_title">Обновление заблокировано</string>
     <string name="blocked_update_dialog_summary">Это обновление требует ручной процедуры установки (очистка/форматирование раздела Data перед установкой обновления). Пожалуйста, скачайте прошивку с нашего сайта, перезагрузитесь в recovery и следуйте процедуре, чтобы обновить систему.</string>
     <string name="action_download">Загрузить</string>
@@ -51,7 +51,7 @@
     <string name="action_delete">Удалить</string>
     <string name="confirm_delete_dialog_title">Удалить файл</string>
     <string name="confirm_delete_dialog_message">Удалить выбранный файл обновления?</string>
-    <string name="pause_button">Приостановить</string>
+    <string name="pause_button">Пауза</string>
     <string name="resume_button">Продолжить</string>
     <string name="reboot">Перезагрузка</string>
     <string name="reboot_needed_dialog_title">Требуется перезагрузка</string>
@@ -96,10 +96,18 @@
     <string name="donate_info_title">Пожертвовать</string>
     <string name="donate_info_summary">Поддержать разработку проекта</string>
     <string name="website_info_title">Веб-сайт</string>
-    <string name="website_info_summary">Посетить наш веб-сайт</string>
+    <string name="website_info_summary">Посетите наш веб-сайт</string>
     <string name="news_info_title">Новости</string>
     <string name="news_info_summary">Будьте в курсе обновлений и других новостей</string>
     <string name="forum_info_title">Форум</string>
-    <string name="forum_info_summary">Последние сообщения на форуме</string>
+    <string name="forum_info_summary">Посмотреть сообщения на форуме</string>
     <string name="error_open_url">Не удалось открыть ссылку</string>
+    <string name="menu_local_installation">Локальная установка</string>
+    <string name="no_local_installation">Не найден локальный установочный пакет.\nПожалуйста, скопируйте установочный zip в корень внутреннего хранилища устройства.</string>
+    <string name="file_deletion_success">Файл успешно удалён</string>
+    <string name="file_deletion_failed">Не удалось удалить файл</string>
+    <string name="delete_file_dialog_title">Удалить файл</string>
+    <string name="delete_file_dialog_desc">Вы уверены?</string>
+    <string name="lbl_yes">ДА</string>
+    <string name="lbl_no">НЕТ</string>
 </resources>

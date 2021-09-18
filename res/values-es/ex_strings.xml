@@ -96,4 +96,12 @@
     <string name="forum_info_title">Foro</string>
     <string name="forum_info_summary">Ver publicaciones del foro</string>
     <string name="error_open_url">Falló al abrir la URL en el navegador</string>
+    <string name="menu_local_installation">Instalación local</string>
+    <string name="no_local_installation">No se ha encontrado ningún paquete de instalación local válido.\nPor favor, copie el zip de instalación a la raíz del almacenamiento interno del dispositivo.</string>
+    <string name="file_deletion_success">Archivo eliminado correctamente</string>
+    <string name="file_deletion_failed">Error al eliminar el archivo</string>
+    <string name="delete_file_dialog_title">Eliminar archivo</string>
+    <string name="delete_file_dialog_desc">Estas seguro?</string>
+    <string name="lbl_yes">SÍ</string>
+    <string name="lbl_no">NO</string>
 </resources>
