@@ -9,7 +9,7 @@
     android:nextFocusRight="@+id/update_action"
     app:cardBackgroundColor="@color/cardview_background"
     app:cardCornerRadius="16dp"
-    app:cardElevation="2dp"
+    app:cardElevation="0dp"
     app:contentPaddingBottom="20dp"
     app:contentPaddingLeft="16dp"
     app:contentPaddingRight="16dp"
