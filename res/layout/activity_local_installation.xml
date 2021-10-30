@@ -50,7 +50,7 @@ android:background="@color/theme_primary">
     android:layout_height="?actionBarSize"
     android:layout_gravity="bottom"
     android:background="@color/theme_bottom_appbar"
-    android:theme="@style/ToolbarMenuTheme"
+    android:theme="?android:attr/actionBarTheme"
     app:navigationIcon="@drawable/ic_back" />
 
 <FrameLayout

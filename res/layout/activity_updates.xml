@@ -26,7 +26,6 @@
                     android:layout_height="wrap_content"
                     android:drawableTop="@drawable/ic_warning"
                     android:drawablePadding="15dp"
-                    android:drawableTint="@*android:color/accent_device_default_light"
                     android:gravity="center"
                     android:paddingStart="46dp"
                     android:paddingTop="15dp"
@@ -63,7 +62,7 @@
             android:layout_height="?actionBarSize"
             android:layout_gravity="bottom"
             android:background="@color/theme_bottom_appbar"
-            android:theme="@style/ToolbarMenuTheme"
+            android:theme="?android:attr/actionBarTheme"
             app:menu="@menu/menu_toolbar"
             app:navigationIcon="@drawable/ic_back" />
 

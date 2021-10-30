@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="card_round_corner">16dp</dimen>
+    <dimen name="card_round_corner">@*android:dimen/config_cardCornerRadius</dimen>
     <dimen name="swipe_delete_icon_right_margin">35dp</dimen>
 </resources>

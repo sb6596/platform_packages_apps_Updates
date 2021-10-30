@@ -7,7 +7,7 @@
                 android:bottomRightRadius="@dimen/card_round_corner"
                 android:topRightRadius="@dimen/card_round_corner"
                 />
-            <solid android:color="@*android:color/accent_device_default_light" />
+            <solid android:color="@color/theme_accent" />
         </shape>
     </item>
 </selector>
