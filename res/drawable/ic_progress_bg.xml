@@ -17,7 +17,7 @@
         <scale android:scaleWidth="100%">
             <shape>
                 <corners android:radius="50dp" />
-                <solid android:color="@*android:color/accent_device_default_light" />
+                <solid android:color="@*android:color/accent_device_default" />
             </shape>
         </scale>
     </item>
